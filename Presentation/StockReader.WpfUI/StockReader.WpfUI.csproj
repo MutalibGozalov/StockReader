@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\StockReader.Infrastructure\StockReader.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\StockReader.Persistance\StockReader.Persistance.csproj" />
   </ItemGroup>
 
 </Project>
