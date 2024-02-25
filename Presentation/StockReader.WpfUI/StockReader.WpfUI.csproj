@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\StockReader.Infrastructure\StockReader.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\Persistance\StockReader.Persistance\StockReader.Persistance.csproj" />
   </ItemGroup>
 
 </Project>
