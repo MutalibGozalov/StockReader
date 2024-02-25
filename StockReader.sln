@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3822798B-22D9-43C1-9C7D-F6FC5DE8D9DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Domain", "Core\StockReader.Domain\StockReader.Domain.csproj", "{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Application", "Core\StockReader.Application\StockReader.Application.csproj", "{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0B7F1310-DA41-4D09-AFC1-4E823B4AE1C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Infrastructure", "Infrastructure\StockReader.Infrastructure\StockReader.Infrastructure.csproj", "{B1CA18EE-B8A5-4896-AECB-7E6E4857B382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Persistance", "Infrastructure\StockReader.Persistance\StockReader.Persistance.csproj", "{FDEF7D05-D352-47BB-BF7C-989EB09775C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A6ED681A-07F4-4569-A2EF-0612E66E500E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.WpfUI", "Presentation\StockReader.WpfUI\StockReader.WpfUI.csproj", "{40D2438A-FF6C-452E-9AA9-221D7B457B17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CA18EE-B8A5-4896-AECB-7E6E4857B382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CA18EE-B8A5-4896-AECB-7E6E4857B382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CA18EE-B8A5-4896-AECB-7E6E4857B382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CA18EE-B8A5-4896-AECB-7E6E4857B382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEF7D05-D352-47BB-BF7C-989EB09775C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEF7D05-D352-47BB-BF7C-989EB09775C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEF7D05-D352-47BB-BF7C-989EB09775C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEF7D05-D352-47BB-BF7C-989EB09775C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D2438A-FF6C-452E-9AA9-221D7B457B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D2438A-FF6C-452E-9AA9-221D7B457B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D2438A-FF6C-452E-9AA9-221D7B457B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D2438A-FF6C-452E-9AA9-221D7B457B17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11} = {3822798B-22D9-43C1-9C7D-F6FC5DE8D9DC}
+		{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D} = {3822798B-22D9-43C1-9C7D-F6FC5DE8D9DC}
+		{B1CA18EE-B8A5-4896-AECB-7E6E4857B382} = {0B7F1310-DA41-4D09-AFC1-4E823B4AE1C1}
+		{FDEF7D05-D352-47BB-BF7C-989EB09775C5} = {0B7F1310-DA41-4D09-AFC1-4E823B4AE1C1}
+		{40D2438A-FF6C-452E-9AA9-221D7B457B17} = {A6ED681A-07F4-4569-A2EF-0612E66E500E}
+	EndGlobalSection
+EndGlobal
