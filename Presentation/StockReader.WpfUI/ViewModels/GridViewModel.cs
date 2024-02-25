@@ -1,13 +1,12 @@
-﻿using StockReader.Domain.Entities.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockReader.Domain.Entities
+namespace StockReader.WpfUI.ViewModels
 {
-    public class TradeData : BaseEntity
+    public class GridViewModel
     {
         public DateOnly TradeDate { get; set; }
         public decimal Open { get; set; }
