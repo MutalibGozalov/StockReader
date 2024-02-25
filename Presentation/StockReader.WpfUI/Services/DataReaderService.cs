@@ -12,7 +12,8 @@ namespace StockReader.WpfUI.Services
     {
         private readonly IDataReader _txtreader;
 
-        internal static string pluginDirectory = Directory.GetCurrentDirectory() + "\\Plugins";
+        //internal static string pluginDirectory = "C:\\Users\\Mutalib\\Desktop\\Projects\\StockReader_xalqbank\\CSVReader\\CSVReader\\bin\\Debug\\net8.0";
+        internal static string pluginDirectory = "C:\\Users\\Mutalib\\Desktop\\Projects\\Plugins";
         internal static Dictionary<string, IDataReader> Plugins = new Dictionary<string, IDataReader>();
 
         public DataReaderService(IDataReader txtreader)
@@ -71,9 +72,17 @@ namespace StockReader.WpfUI.Services
             {
                 AssemblyLoadContext loadContext = new AssemblyLoadContext(dll);
                 Assembly assembly = loadContext.LoadFromAssemblyPath(dll);
-                var type = assembly.GetTypes().Where(t => t.IsAssignableFrom(typeof(IDataReader))).First();
-                IDataReader reader = Activator.CreateInstance(type) as  IDataReader;
-                Plugins.Add(Path.GetFileNameWithoutExtension(dll), reader);
+                var types = assembly.GetTypes();
+                var asgt = types.Where(t => !t.IsAbstract && !t.IsInterface && t.IsAssignableFrom(typeof(IDataReader)));
+                var type = asgt.FirstOrDefault();
+                if (type is not null)
+                {
+                }
+                    IDataReader reader = Activator.CreateInstance(assembly.GetType("CSVReader.CSVReader")) as IDataReader;
+                    if (!Plugins.ContainsKey(Path.GetFileNameWithoutExtension(dll)))
+                    {
+                        Plugins.Add(Path.GetFileNameWithoutExtension(dll), reader);
+                    }
             }
         }
     }

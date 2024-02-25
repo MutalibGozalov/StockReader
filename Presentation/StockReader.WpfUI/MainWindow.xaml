@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StockReader.WpfUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="MainWindow_Loaded">
     <Grid>
-        <TabControl Margin="0,54,0,0" SelectionChanged="OnTabSelectionChanged">
+        <TabControl x:Name="tabControl" Margin="0,54,0,0">
             <TabItem x:Name="txtTab" Header="TabItem" Height="22" Margin="-2,0,-2,0" VerticalAlignment="Top">
                 <Grid Background="#FFE5E5E5">
                     <Border BorderBrush="Black" BorderThickness="1">
@@ -15,21 +15,19 @@
                     </Border>
                 </Grid>
             </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5">
-                    <Border BorderBrush="Black" BorderThickness="1">
-                        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,-2,-2"/>
-                    </Border>
-                </Grid>
-            </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5">
-                    <Border BorderBrush="Black" BorderThickness="1">
-                        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,-2,-2"/>
-                    </Border>
-                </Grid>
-            </TabItem>
         </TabControl>
+        <Slider
+            x:Name="durationSlider" 
+             ValueChanged="SetInputRefreshRate"
+    Orientation="Horizontal"
+    Minimum="1"
+    Maximum="60"
+    Value="5"
+    IsSnapToTickEnabled="True"
+    TickFrequency="1" Margin="400,30,141,352"
+/>
+        <Label x:Name="refreshRateTxt" Content="Change input directory refresh rate: 5 sec" HorizontalAlignment="Left" Margin="123,25,0,0" VerticalAlignment="Top"/>
+        <Button Content="Settings" HorizontalAlignment="Left" Margin="703,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.298,0.066" Height="33" Width="56" Click="openSettings"/>
 
     </Grid>
 </Window>

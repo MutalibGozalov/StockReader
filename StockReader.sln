@@ -5,27 +5,28 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3822798B-22D9-43C1-9C7D-F6FC5DE8D9DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Domain", "Core\StockReader.Domain\StockReader.Domain.csproj", "{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockReader.Domain", "Core\StockReader.Domain\StockReader.Domain.csproj", "{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Application", "Core\StockReader.Application\StockReader.Application.csproj", "{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockReader.Application", "Core\StockReader.Application\StockReader.Application.csproj", "{C696CE32-2FE8-4B2E-A2D0-5ACBFA52EA1D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0B7F1310-DA41-4D09-AFC1-4E823B4AE1C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Infrastructure", "Infrastructure\StockReader.Infrastructure\StockReader.Infrastructure.csproj", "{B1CA18EE-B8A5-4896-AECB-7E6E4857B382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockReader.Infrastructure", "Infrastructure\StockReader.Infrastructure\StockReader.Infrastructure.csproj", "{B1CA18EE-B8A5-4896-AECB-7E6E4857B382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.Persistance", "Infrastructure\StockReader.Persistance\StockReader.Persistance.csproj", "{FDEF7D05-D352-47BB-BF7C-989EB09775C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockReader.Persistance", "Infrastructure\StockReader.Persistance\StockReader.Persistance.csproj", "{FDEF7D05-D352-47BB-BF7C-989EB09775C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A6ED681A-07F4-4569-A2EF-0612E66E500E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockReader.WpfUI", "Presentation\StockReader.WpfUI\StockReader.WpfUI.csproj", "{40D2438A-FF6C-452E-9AA9-221D7B457B17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockReader.WpfUI", "Presentation\StockReader.WpfUI\StockReader.WpfUI.csproj", "{40D2438A-FF6C-452E-9AA9-221D7B457B17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSVReader", "CSVReader", "{F199437B-140A-4299-9646-80C4D5E9760C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVReader", "CSVReader\CSVReader\CSVReader.csproj", "{0BCAB69E-2E00-4E46-9557-C9A5470DAE68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,6 +49,13 @@ Global
 		{40D2438A-FF6C-452E-9AA9-221D7B457B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D2438A-FF6C-452E-9AA9-221D7B457B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40D2438A-FF6C-452E-9AA9-221D7B457B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCAB69E-2E00-4E46-9557-C9A5470DAE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCAB69E-2E00-4E46-9557-C9A5470DAE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCAB69E-2E00-4E46-9557-C9A5470DAE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCAB69E-2E00-4E46-9557-C9A5470DAE68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F6A2C26B-671A-4D1A-B6CE-B1D4D35F3E11} = {3822798B-22D9-43C1-9C7D-F6FC5DE8D9DC}
@@ -55,5 +63,6 @@ Global
 		{B1CA18EE-B8A5-4896-AECB-7E6E4857B382} = {0B7F1310-DA41-4D09-AFC1-4E823B4AE1C1}
 		{FDEF7D05-D352-47BB-BF7C-989EB09775C5} = {0B7F1310-DA41-4D09-AFC1-4E823B4AE1C1}
 		{40D2438A-FF6C-452E-9AA9-221D7B457B17} = {A6ED681A-07F4-4569-A2EF-0612E66E500E}
+		{0BCAB69E-2E00-4E46-9557-C9A5470DAE68} = {F199437B-140A-4299-9646-80C4D5E9760C}
 	EndGlobalSection
 EndGlobal
